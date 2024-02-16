@@ -9,6 +9,12 @@
   pointer-events: none;
 }
 
+li {
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(224, 216, 193) 100%);
+  padding: 3px;
+  list-style-type: none;
+  border-radius: "2px";
+}
 
 .api-container {
   max-width: 600px;
@@ -38,9 +44,15 @@
   text-align: left;
   margin-top: 20px;
   padding: 20px;
-  background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.usuario {
+ background-color:  rgb(234, 229, 210);
+  margin: 20px;
+  padding: 10px;
+  border-radius: "50%";
 }
 
 .dataImages{ 

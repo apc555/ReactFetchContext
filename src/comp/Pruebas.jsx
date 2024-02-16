@@ -29,3 +29,18 @@ import { countries } from '../country-codes';
   );
 
 }
+
+
+useEffect(() => {
+    const buscarPais = async () => {
+        const selectedCountry = countries.find((country) => country.iso.alpha2 === datosUser.nat);
+        const nombrePais = selectedCountry ? selectedCountry.officialName.spanish : "";
+        console.log(nombrePais);
+        setNombrarPais(nombrePais);
+    };
+
+    if (!datosUser) { // Verificar si los datos del usuario están disponibles
+        realizarFetch();
+        buscarPais();
+    }
+}, []); // Ejecutar solo una vez al montar el componente
