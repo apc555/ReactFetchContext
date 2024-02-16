@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-family: "Lato", sans-serif;
+
 }
 
 .App-logo {
@@ -46,6 +48,35 @@
   text-align: center;
 }
 
+/* Definir la animación para mostrar los datos del usuario */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Definir la animación para ocultar los datos del usuario */
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+/* Aplicar la animación para mostrar los datos del usuario */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Aplicar la animación para ocultar los datos del usuario */
+.fade-out {
+  animation: fadeOut 0.3s ease-in-out;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
